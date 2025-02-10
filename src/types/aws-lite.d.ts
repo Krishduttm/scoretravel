@@ -11,7 +11,7 @@ export interface S3 {
 }
 
 declare module '@aws-lite/client' {
-  interface AwsLiteConfig {
+  type AwsLiteConfig = {
     region: string;
     endpoint?: string;
     accessKeyId?: string;
